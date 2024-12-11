@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <!-- <div class="logo">Pournami</div> -->
+      <div class="logo-container">
+        <img src="img/P.png" alt="Logo" class="logo-image">
+        <span class="site-title"></span>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="ed.html">Education</a></li>
+
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="img/MY.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+    </div>
+  </section>
+  <section class="services">
+    <h2>What I Do</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Creating dynamic and responsive websites.</p>
+      </div>
+      <div class="card">
+        <h3>Blockchain</h3>
+        <p>Exploring secure and decentralized solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Backend</h3>
+        <p>Developing robust and scalable backend systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Pournami C S. All rights reserved.</p>
+  </footer>
+</body>
+</html>

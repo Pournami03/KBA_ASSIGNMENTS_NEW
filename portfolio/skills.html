@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Pournami C S</title>
+  
+  <!-- Inline CSS -->
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color:black;
+      color: white;
+      padding: 1rem ;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-image {
+      width: 20px;
+      height: 20px;
+    }
+
+    .site-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Navbar Styling */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links li {
+      text-align: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-links a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Skills Section */
+    .skills {
+      padding: 4rem 2rem;
+      background-color:black;
+      color:white
+    }
+
+    .skills h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeInJump 2s forwards;
+    }
+
+    .skills-list {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeInJump 2s forwards 1s; /* Delay the skills section */
+    }
+
+    .skill-card {
+      background-color: #f0f0f0;
+      color:black;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInJump 2s forwards 1.5s; /* Delay each card */
+    }
+
+    .skill-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Fade and Jump Animation */
+    @keyframes fadeInJump {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 0.5rem;
+      background-color:black;
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .skills-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .skill-card {
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="img/P.png" alt="Logo" class="logo-image">
+        <!-- <span class="site-title">Pournami C S</span> -->
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ed.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="skills.html">Skills</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill-card">
+          <img src="img/s1.jpeg" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>Experienced in HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I build responsive and dynamic websites.</p>
+        </div>
+        <!-- <div class="skill-card">
+          <img src="blockchain-icon.png" alt="Blockchain">
+          <h3>Blockchain</h3>
+          <p>Exploring decentralized systems and secure blockchain solutions. I have hands-on experience with Ethereum and smart contracts.</p>
+        </div> -->
+        <div class="skill-card">
+          <img src="img/s2.jpeg" alt="Backend Development">
+          <h3>Backend Development</h3>
+          <p>Skilled in server-side languages like Node.js, Express.js, and working with databases like MongoDB and MySQL.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pournami C S. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
