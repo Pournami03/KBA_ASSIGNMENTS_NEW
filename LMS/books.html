@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Book Title - Bookzone</title>
+</head>
+<body>
+  <header>
+    <div class="logo">Bookzone</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#books">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="book-details">
+      <div class="book-cover">
+        <img src="images/1.jpeg" alt="Book Title Cover">
+      </div>
+      <div class="book-info">
+        <h1>Ikigai</h1>
+        <p><strong>Author:</strong> Ikigai</p>
+        <p><strong>Genre:</strong> Fiction</p>
+        <p><strong>Description:</strong> This is an engaging story about a thrilling adventure that captivates the reader from start to finish.</p>
+        <p><strong>Availability:</strong> <span class="available">Available</span></p>
+        <!-- <button class="btn" onclick="showBorrowModal()">Borrow Book</button> -->
+      </div>
+    </div>
+
+    <section class="user-reviews">
+      <h2>User Reviews</h2>
+      <div class="review">
+        <p><strong>Jane Doe:</strong> Absolutely loved this book! The story was gripping and kept me hooked till the end.</p>
+      </div>
+      <div class="review">
+        <p><strong>Sam Smith:</strong> A fascinating read. Highly recommended for fiction lovers.</p>
+      </div>
+      <form>
+        <textarea placeholder="Leave a review..." rows="4"></textarea>
+        <button type="submit" class="btn">Submit Review</button>
+      </form>
+    </section>
+
+    <section class="related-books">
+      <h2>Related Books</h2>
+      <div class="related-grid">
+        <div class="book-card">
+          <img src="images/4.jpeg" alt="Related Book 1">
+          <h3>Related Book 1</h3>
+          <a href="viewdetails.html" class="btn">View Details</a>
+        </div>
+        <div class="book-card">
+          <img src="images/5.jpeg" alt="Related Book 2">
+          <h3>Related Book 2</h3>
+          <a href="viewdetails.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="borrowModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideBorrowModal()">&times;</span>
+      <h2>Confirm Borrowing</h2>
+      <p>Are you sure you want to borrow <strong>Book Title</strong>?</p>
+      <button class="btn">Confirm</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Bookzone. All rights reserved.
+  </footer>
+
+  <!-- <script>
+    function showBorrowModal() {
+      document.getElementById('borrowModal').style.display = 'block';
+    }
+
+    function hideBorrowModal() {
+      document.getElementById('borrowModal').style.display = 'none';
+    }
+  </script> -->
+</body>
+</html>
